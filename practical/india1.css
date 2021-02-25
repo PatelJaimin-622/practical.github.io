@@ -1,0 +1,35 @@
+body	{background-image: url('backimg.jpg');
+  	    	background-repeat: no-repeat;
+ 		 background-attachment: fixed;
+ 		 background-size: 100% 100%;
+ 		 font-family:arial;
+}
+.img1
+{
+ 	margin-left: 400px;
+ 	/*height:50%;
+ 	width: 50%;*/
+}
+.heading,h1{
+	text-align: center;
+	border-style: solid;
+	border-width:2px;
+	margin-bottom: 10px;
+	margin-right:270px;
+	margin-left:250px; 
+}
+
+
+
+	#ad{
+		font-size: 25px;
+		margin-top:100px;
+		text-align: center;
+	}
+	#travel2{
+		margin-top: 50px; 
+		margin-left:600px;
+	}
+
+
+	

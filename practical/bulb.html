@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="demo_icon.jpg" type="image/gif" sizes="192x192">
+	<link rel="stylesheet" type="text/css" href="bulb.css">
+	<title>Smart bulb</title>
+</head>
+<body>
+	
+
+	<p ><h1 class ="heading">change color of smart bulb and see effect </h1></p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+  				  pic = "white.jpg"
+  				}
+  if (sw == 1) {
+  				  pic = "blue.jpg"
+  				}
+  if (sw == 2) {
+  				  pic = "yellow.jpg"
+  				}  				  				
+  if (sw == 3) {
+    		pic = "pink.jpg"
+ 			 }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+
+	<p  ><img id="myImage" src="white.jpg" alt="room" ></p>
+
+<p>
+<button class="blue" type="button" onclick="light(1)"> blue Light</button>
+<button class="white" type="button" onclick="light(0)"> white Light </button>
+<button class="yellow" type="button" onclick="light(2)"> yellow Light </button>
+<button class="pink" type="button" onclick="light(3)"> pink Light </button>
+</p>
+
+<p id="ad"><b><u> To buy this bulb click the below link</b></u><p>
+
+<p id="travel2"><a href="https://www.google.com/aclk?sa=L&ai=DChcSEwjd9c2i24LvAhWXDisKHVnvBVUYABAKGgJzZg&ae=2&sig=AOD64_0qnugj9eJjGpo61VjYVAor3_F6vQ&q&adurl&ved=2ahUKEwicg8ei24LvAhWR6XMBHe5ACsIQ0Qx6BAgDEAE">
+<img src="bulbimg.gif" alt="bulb" width="100" height="132">
+</a></p>
+
+
+
+</body>
+</html>

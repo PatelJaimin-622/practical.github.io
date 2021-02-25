@@ -1,0 +1,151 @@
+body	{background-image: url('backimg.jpg');
+  	    	background-repeat: no-repeat;
+ 		 background-attachment: fixed;
+ 		 background-size: 100% 100%;
+ 		 font-family:arial;
+}
+
+	#myImage
+		{
+	 	margin-left: 400px;
+	 	
+		}
+.heading,h1{
+	text-align: center;
+	border-style: solid;
+	border-width:2px;
+	margin-bottom: 10px;
+	margin-right:270px;
+	margin-left:250px; 
+}
+
+
+
+	#ad{
+		font-size: 25px;
+		margin-top:100px;
+		text-align: center;
+	}
+	#travel2{
+		margin-top: 50px; 
+		margin-left:650px;
+	}
+
+
+
+
+
+
+
+	.blue {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+	margin-top: 25px; 
+	margin-left:350px;
+}
+
+.blue {
+  background-color: rgba(234, 249, 250,0.5); 
+  color: black; 
+  border: 2px rgba(113,25,195);
+}
+
+.blue:hover {
+  background-color: rgba(113,25,195);
+  color: white;
+}
+
+
+.white {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+	margin-top: 25px; 
+	margin-left:10px;
+}
+
+.white {
+  background-color: rgba(234, 249, 250,0.5); 
+  color: black; 
+  border: 2px rgba(234, 249, 250,0.5);
+}
+
+.white:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+.yellow {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+	margin-top: 25px; 
+	margin-left:10px;
+}
+
+.yellow {
+  background-color: rgba(234, 249, 250,0.5); 
+  color: black; 
+  border: 2px rgba(234, 249, 250,0.5);
+}
+
+.yellow:hover {
+  background-color: orange;
+  color: white;
+}
+
+
+
+.pink {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+	margin-top: 25px; 
+	margin-left:10px;
+}
+
+.pink {
+  background-color: rgba(234, 249, 250,0.5); 
+  color: black; 
+  border: 2px rgba(234, 249, 250,0.5);
+}
+
+.pink:hover {
+  background-color: rgba(244,15,168);
+  color: white;
+}
