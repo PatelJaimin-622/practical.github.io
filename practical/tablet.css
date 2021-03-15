@@ -73,6 +73,11 @@ a:active {
   color: orange;
 }
 
+td:hover{
+	background-color: orange;
+	color: white;
+}
+
 #ad{
 	color:rgb(255, 153, 0);
 		font-size: 25px;
