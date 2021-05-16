@@ -1,0 +1,150 @@
+*{
+      margin: 0px;
+      padding: 0px;
+}
+/* ===========================menubar================= */
+.menu{
+	width: 100%;
+	height: 100px;
+	background-color: rgb(0,0,0,0.86);
+  
+  }
+  .leftmenu{
+	width: 25%;
+	line-height: 100px;
+	float: left;
+  }
+  .leftmenu h4{
+	padding-left: 20px;
+	padding-top: 25px;
+	font-weight: bold;
+	color: white;
+	font-size: 27px;
+	font-family: 'Montserrat',sans-serif;
+  
+  
+  }
+  .rightmenu  {
+	width: 60%;
+	height: 100px;
+	float: right;
+  
+  }
+  
+  .rightmenu  ul{
+	margin-left: 55px;
+  }
+  .rightmenu ul li {
+	font-family: 'Montserrat',sans-serif;
+	display: inline;
+	line-height: 100px;
+	list-style: none;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	margin-left: 40px;
+	text-transform: uppercase;
+	cursor: pointer;
+  
+  }
+  a.lin{
+	 text-decoration:none;
+	 color:white;
+  }
+  
+  
+  #firstlist{
+	color: rgb(252, 52, 52);
+  
+  }
+  
+  .rightmenu ul li:hover{
+	color: orange;
+  }
+  
+  .effect{
+	margin: 0;
+  }
+  
+   marquee{
+	 margin:9px 0 0 0;
+   }
+  
+  
+  
+  
+	.effect {
+	  display: inline-block;
+	  position: relative;
+	   color: white; 
+	}
+	
+	.effect::after {
+	  content: '';
+	  position: absolute;
+	  width: 100%;
+	  transform: scaleX(0);
+	  height: 3px;
+	  bottom: 30px;
+	  left: 0;
+	  background-color: rgb(252, 52, 52);
+	  transform-origin: bottom right;
+	  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+	}
+	
+	.effect:hover::after {
+	  transform: scaleX(1);
+	  transform-origin: bottom left;
+	}
+  
+	/* =========================end of menubar================= */
+
+	/* ==========================footer============================ */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0,0,0,0.86);
+    margin-top: 10px;
+  }
+
+
+
+  .rightfooter  {
+    width: 60%;
+    height: 150px;
+    float: right;
+  
+  }
+
+  .leftfooter{
+    width: 25%;
+    line-height: 25px;
+    float: left;
+  }
+
+ 
+  .leftfooter {
+    padding-left: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    font-family: 'Montserrat',sans-serif;
+    padding-top: 20px;
+  
+  
+  }
+  .special{
+      color:rgb(252, 52, 52);
+  }
+
+  .rightfooter  {
+    width: 25%;
+    height: 100px;
+    float: right;
+    padding-left: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    font-family: 'Montserrat',sans-serif;
+    padding-top: 20px;
+  }

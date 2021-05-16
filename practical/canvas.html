@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+ 
+    <style>
+#first,#second,#third,#fourth{
+    margin-left: 90px;
+}
+#block{
+    background-color:rgb(233, 239, 243);
+    margin-top:40px;
+    padding-top: 100px;
+    padding-bottom:100px;
+}
+h2{
+        color: rgb(92, 89, 97);
+        text-align:center;
+        padding-top: 30px;
+        font-size: 27px;
+         
+    
+}
+
+    </style>
+
+</head>
+<body>
+   
+    <h2><b><u>This is the example of Cavas.</u></b></h2><br>
+
+    <div id= "block">
+    <canvas id="first"  width="200" height="200" style="border: 1px solid black;"></canvas>
+    <canvas id="second"  width="200" height="200" style="border: 1px solid black;"></canvas>
+    <canvas id="third"  width="200" height="200" style="border: 1px solid black;"></canvas>
+    <canvas id="fourth"  width="200" height="200" style="border: 1px solid black;"></canvas>
+</div>
+  
+  <script>
+        var c=document.getElementById("first");
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(100, 100, 60, 0, 2 * Math.PI);
+        ctx.stroke();
+    </script>
+    <script>
+        var c = document.getElementById("first");
+        var ctx = c.getContext("2d");
+        ctx.font = "25px Arial";
+        ctx.strokeText("circle", 70, 106);
+        </script>
+
+
+<script>
+    var c=document.getElementById("second");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.rect(30, 30, 135, 135);
+    ctx.stroke();
+</script>
+<script>
+    var c = document.getElementById("second");
+    var ctx = c.getContext("2d");
+    ctx.font = "25px Arial";
+    ctx.strokeText("square", 65, 106);
+    </script>
+
+
+<script>
+    var c=document.getElementById("third");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.rect(30, 52, 135, 90);
+    ctx.stroke();
+</script>
+<script>
+    var c = document.getElementById("third");
+    var ctx = c.getContext("2d");
+    ctx.font = "25px Arial";
+    ctx.strokeText("rectangle", 45, 106);
+    </script>
+
+<script>
+    var c=document.getElementById("fourth");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(100,10);
+        ctx.lineTo(190,190);
+            ctx.moveTo(10,190);
+            ctx.lineTo(190,190);
+            ctx.moveTo(100,10);
+            ctx.lineTo(10,190);
+        ctx.stroke();
+// ctx.lineTO(50,50);
+ctx.Stroke();
+</script>
+<script>
+    var c = document.getElementById("fourth");
+    var ctx = c.getContext("2d");
+    ctx.font = "25px Arial";
+    ctx.strokeText("triangle", 59, 140);
+    </script>
+
+
+
+
+</body>
+</html>

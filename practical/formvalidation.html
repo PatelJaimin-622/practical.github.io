@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"  type="text/css" href="formvalidation.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    
+
+</head>
+<body>
+    <div id="block">
+        <h1>SIGN UP</h1>
+    <form method="GET" onsubmit="alert(`Succesfully submitted`)">
+        <lable for="uname" >Name</lable><br>
+        <input type="text" name="uname" id="uname" placeholder="Enter Your User Name" pattern="[a-zA-Z0-9@_!#$%^&*]+" required><br>
+
+        
+        <div id="validate_uname">
+            <p id="starting" class="valid_uname">Should not strat with _ or @ or numbers*</p>
+        </div>
+
+        <lable for="password">Password</lable><br>
+         <input type="password" name="pwd" id="pwd" placeholder="Enter Your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required><br>
+         <div id="validate">
+            <p id="lower" class="invalid">lowercase letters*</p>
+            <p id="capital" class="invalid"> uppercase letters*</p>
+            <p id="num" class="invalid"> numbers*</p>
+            <p id="length" class="invalid">minimum 6 characters*</p>
+        </div>
+        <button type="submit" id="submit">SUBMIT</button>
+
+    </form>
+    </div>
+
+    <script src="formvalidation.js"></script>
+</body>
+</html>

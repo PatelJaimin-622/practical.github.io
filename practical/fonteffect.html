@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Effect</title>
+  <style>
+    body{
+      background-color: lightblue;
+    }
+   p{       display: flex;
+            justify-content: center;
+            margin-top: 100px;  
+    }
+
+
+
+    .back {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+	margin-top: 25px; 
+	margin-left: 650px;
+}
+
+.back {
+  background-color: rgba(234, 249, 250,0.5); 
+  color: black; 
+  border: 2px rgba(113,25,195);
+}
+
+.back:hover {
+  background-color: rgba(113,25,195);
+  color: white;
+}
+  </style>
+</head> 
+<body>
+    <P id="par"></P>
+    <!-- <button onclick="inTimer()">click here</button> -->
+    <button class="back" type="button" >Back</button>
+    <script>
+              var var1 = setInterval(inTimer, 70);
+        var fs = 1;
+        var ids = document.getElementById("par");
+        function inTimer() {
+            ids.innerHTML = '<b> AHMEDABAD INSTITUTE OF TECHNOLOGY </b>';
+            ids.setAttribute('style', "font-size: " + fs + "px; color: grey;");
+            fs += 3;
+            if(fs >= 50 ){
+            clearInterval(var1);
+            }
+        }
+    </script>
+</body>
+</html>

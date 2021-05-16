@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p> your answer is displayed in console </p>
+   <p> To open console press ctl + shift + I</p>
+   <script>
+      var text = prompt("prompt", "enter fibonacci number");
+      var int = parseInt(text,10);
+      var n1=0 ,  n2 = 1, ni;
+      console.log("this is fibonacci series")
+      for(let i=0;i<=text;i++){
+          console.log(n1);
+          ni=n1+n2;
+          n1=n2;
+          n2=ni;
+      }
+      
+   </script>
+
+</body>
+</html>

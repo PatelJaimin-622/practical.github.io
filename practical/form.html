@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="form.css">
+		<title>ticket booking</title>
+	</head>
+<body>
+	<div class="block">
+		<h1><u>Form</u></h1> 
+			<form>
+
+				<label for="name"><b>Name</b></label>
+				<input type="text" placeholder="Enter yor name" required class="name" id="name">
+
+				<label for="name"><b>Email</b></label>
+				<input type="text" placeholder="Enter yor email" required class="email" id="email">
+
+				<label for="phone"><b>Phone no.</b></label>
+				<input type="number" placeholder="91+" required class="phone" id="phone">
+                <div class="radioo">
+				<label for="gender">Gender</label>&nbsp&nbsp&nbsp&nbsp<br>
+				<label for="male">Male</label>
+				<input type="radio" id="male" name="gender" value="male">&nbsp&nbsp
+
+				<label for="male">Female</label>
+				<input type="radio" id="female" name="gender" value="female"></div>
+                <br>
+
+
+				<label for="age"><b>Age</b></label><br>
+				<input type="number" placeholder="enter your age" required class="age" id="age"><br>
+
+
+             
+                <label for="current_add">Temparory Address</label><br><br>
+                <textarea  placeholder="Enter your permanaent address" id="current_add" required class="current_add" cols="125 " rows="5">
+				</textarea><br>
+                <label for="current_same"> Same as above </label>
+                <input type="checkbox" name="current_same" id="current_same" onclick="check()"><br><br><br>
+
+
+
+                <label for="permanent_add">Permanent Address</label><br><br>
+                <textarea  placeholder="Enter your permanaent address" id="permanent_add" required class="permanent_add" cols="125 " rows="5">
+				</textarea><br>
+
+				<label for="terms">I Accept terma and conditions</label>
+				
+
+				<input type="checkbox" name="checkbox" value="check"  /><br>
+<input type="submit" name="submit" value="submit" onclick="if(!this.form.checkbox.checked){alert('You must agree to the terms first.');return false}"  />
+
+
+			</form>	
+
+	</div>
+
+	
+
+    <script>
+       function check() {
+
+var current_add = document.getElementById('current_add');
+var permanent_add = document.getElementById('permanent_add');
+var current_same = document.getElementById('current_same');
+
+if (current_same.checked == true) {
+    permanent_add.value = current_add.value;
+    permanent_add.disabled = true;
+} 
+else {
+    permanent_add.disabled = false;
+}
+} 
+     </script>
+
+
+</body>
+</html>
+
